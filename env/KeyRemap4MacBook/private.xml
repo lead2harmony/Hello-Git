@@ -320,7 +320,6 @@
     <name>代用バックスペース</name>
     <identifier>private.other_backspace</identifier>
 
-    <appendix>Shift + Space</appendix>
     <appendix>Fn + Space</appendix>
     <autogen>--KeyToKey--
       KeyCode::SPACE, ModifierFlag::FN,
