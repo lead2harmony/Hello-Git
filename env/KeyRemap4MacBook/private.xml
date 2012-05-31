@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<!-- http://pqrs.org/macosx/keyremap4macbook/xml.html -->
+<root>
+
+  <appdef>
+    <appname>VMWARE</appname>
+    <equal>com.vmware.fusion</equal>
+  </appdef>
+
+  <appdef>
+    <appname>MSTSC</appname>
+    <equal>com.microsoft.rdc</equal>
+  </appdef>
+
+  <item>
+
+    <name>VMware専用</name>
+    <identifier>private.vmware</identifier>
+    <only>VMWARE</only>
+
+    <appendix>Fn + Shift-L + Command-L + H, L : Shift + Home, End</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::HOME, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::END, ModifierFlag::SHIFT_L
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>Windowsリモートデスクトップ専用</name>
+    <identifier>private.mstsc</identifier>
+    <only>MSTSC</only>
+
+    <appendix>Command + E : Windows + E</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::E, ModifierFlag::COMMAND_L,
+      KeyCode::E, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::E, ModifierFlag::COMMAND_R,
+      KeyCode::E, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Command + R : Windows + R</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::R, ModifierFlag::COMMAND_L,
+      KeyCode::R, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::R, ModifierFlag::COMMAND_R,
+      KeyCode::R, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Command + F : Windows + F</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::F, ModifierFlag::COMMAND_L,
+      KeyCode::F, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::F, ModifierFlag::COMMAND_R,
+      KeyCode::F, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Command + D : Windows + D</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::D, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::D, ModifierFlag::COMMAND_R,
+      KeyCode::D, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Command + M : Windows + M</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::M, ModifierFlag::COMMAND_L,
+      KeyCode::M, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::M, ModifierFlag::COMMAND_R,
+      KeyCode::M, ModifierFlag::OPTION_R | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Command-R + Q : ALT + F4</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::Q, ModifierFlag::COMMAND_R,
+      KeyCode::F4, ModifierFlag::OPTION_R
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>マウス操作およびスクロール操作</name>
+    <identifier>private.other_mouse</identifier>
+
+    <appendix>Fn + Control-L + Option-L + Command-L + U : CLICK</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::U, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::VK_MOUSEKEY_BUTTON_LEFT
+    </autogen>
+
+    <appendix>Fn + Control-L + Option-L + Command-L + I : RIGHT CLICK</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::I, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::VK_MOUSEKEY_BUTTON_RIGHT
+    </autogen>
+
+    <appendix>Fn + Control-L + Option-L [+ Command-L] + H : LEFT SCROLL [POINTER MOVE]</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::VK_MOUSEKEY_LEFT
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
+      KeyCode::VK_MOUSEKEY_SCROLL_LEFT
+    </autogen>
+
+    <appendix>Fn + Control-L + Option-L [+ Command-L] + J : DOWN SCROLL [POINTER MOVE]</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::J, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::VK_MOUSEKEY_DOWN
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::J, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
+      KeyCode::VK_MOUSEKEY_SCROLL_DOWN
+    </autogen>
+
+    <appendix>Fn + Control-L + Option-L [+ Command-L] + K : UP SCROLL [POINTER MOVE]</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::K, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::VK_MOUSEKEY_UP
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::K, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
+      KeyCode::VK_MOUSEKEY_SCROLL_UP
+    </autogen>
+
+    <appendix>Fn + Control-L + Option-L [+ Command-L] + L : RIGHT SCROLL [POINTER MOVE]</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::VK_MOUSEKEY_RIGHT
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
+      KeyCode::VK_MOUSEKEY_SCROLL_RIGHT
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>各機能操作</name>
+    <identifier>private.other_function</identifier>
+
+    <appendix>Fn + 8 : BRIGHTNESS UP</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::KEY_8, ModifierFlag::FN,
+      KeyCode::VK_CONSUMERKEY_BRIGHTNESS_UP
+    </autogen>
+
+    <appendix>Fn + 9 : BRIGHTNESS DOWN</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::KEY_9, ModifierFlag::FN,
+      KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN
+    </autogen>
+
+    <appendix>Fn + I : MISSION CONTROL</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::I, ModifierFlag::FN,
+      KeyCode::MISSION_CONTROL
+    </autogen>
+
+    <appendix>Fn + SHIFT + SEMICOLON : SPOTLIGHT (CONTROL + OPTION + COMMAND + SPACE)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::SEMICOLON, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::SPACE, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+    </autogen>
+
+    <appendix>Fn + SEMICOLON : DASHBOARD</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::SEMICOLON, ModifierFlag::FN,
+      KeyCode::DASHBOARD
+    </autogen>
+
+    <appendix>Fn + RETURN : HELP (for Windows Insert Key)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::RETURN, ModifierFlag::FN,
+      KeyCode::HELP
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>拡張ESCAPE (with Caps Off) *vim friendly*</name>
+    <identifier>private.other_escape_with_caps_off</identifier>
+
+    <appendix>Fn or Control + [</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::CAPSLOCK,
+      KeyCode::CAPSLOCK, KeyCode::ESCAPE
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L | ModifierFlag::CAPSLOCK,
+      KeyCode::CAPSLOCK, KeyCode::ESCAPE
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>代用ESCAPE</name>
+    <identifier>private.other_escape</identifier>
+
+    <appendix>Fn or Control + [</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::FN,
+      KeyCode::ESCAPE
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+      KeyCode::ESCAPE
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>カーソル操作 (vim like)</name>
+    <identifier>private.other_cursor</identifier>
+
+    <appendix>Fn + H : LEFT</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::FN,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+
+    <appendix>Fn + J : DOWN</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::J, ModifierFlag::FN,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+
+    <appendix>Fn + K : UP</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::K, ModifierFlag::FN,
+      KeyCode::CURSOR_UP
+    </autogen>
+
+    <appendix>Fn + L : RIGHT</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::FN,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>クリップボード操作</name>
+    <identifier>private.other_clipboard_operation</identifier>
+
+    <appendix>Fn [+ Shift-L] + U : Undo/Redo (Command [+ Shift] + Z)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::U, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::Z, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::U, ModifierFlag::FN,
+      KeyCode::Z, ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn + Y : Copy (Command + C)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::Y, ModifierFlag::FN,
+      KeyCode::C, ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn + X : Cut (Command + X)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::X, ModifierFlag::FN,
+      KeyCode::X, ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn + P : Paste (Command + V)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::P, ModifierFlag::FN,
+      KeyCode::V, ModifierFlag::COMMAND_R
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>検索操作</name>
+    <identifier>private.other_find</identifier>
+
+    <appendix>Fn [+ Option] + / : Find Window/Application (Command [+ Option] + F)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::SLASH, ModifierFlag::FN,
+      KeyCode::F, ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn [+ Shift] + N : Find Next/Previous (Command [+ Shift] + G)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::N, ModifierFlag::FN,
+      KeyCode::G, ModifierFlag::COMMAND_R
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>代用バックスペース</name>
+    <identifier>private.other_backspace</identifier>
+
+    <appendix>Shift + Space</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::SPACE, ModifierFlag::SHIFT_L,
+      KeyCode::DELETE
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::SPACE, ModifierFlag::SHIFT_R,
+      KeyCode::DELETE, ModifierFlag::SHIFT_R
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>IME切り替え</name>
+    <identifier>private.original_ime_toggle</identifier>
+
+    <appendix>Shift + CapsLock (windows(later vista) like)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::SHIFT_R, ModifierFlag::CAPSLOCK,
+      KeyCode::CAPSLOCK, KeyCode::SHIFT_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CAPSLOCK, ModifierFlag::SHIFT_R,
+      KeyCode::CAPSLOCK, KeyCode::BACKQUOTE, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::SHIFT_L, ModifierFlag::CAPSLOCK,
+      KeyCode::CAPSLOCK, KeyCode::SHIFT_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CAPSLOCK, ModifierFlag::SHIFT_L,
+      KeyCode::CAPSLOCK, KeyCode::BACKQUOTE, ModifierFlag::OPTION_L
+    </autogen>
+
+  </item>
+
+</root>
