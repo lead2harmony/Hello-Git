@@ -176,16 +176,16 @@
       KeyCode::MISSION_CONTROL
     </autogen>
 
-    <appendix>Fn + SHIFT + SEMICOLON : SPOTLIGHT (CONTROL + OPTION + COMMAND + SPACE)</appendix>
+    <appendix>Fn + SHIFT + SEMICOLON : DASHBOARD</appendix>
     <autogen>--KeyToKey--
       KeyCode::SEMICOLON, ModifierFlag::FN | ModifierFlag::SHIFT_L,
-      KeyCode::SPACE, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+      KeyCode::DASHBOARD
     </autogen>
 
-    <appendix>Fn + SEMICOLON : DASHBOARD</appendix>
+    <appendix>Fn + SEMICOLON : SPOTLIGHT (CONTROL + OPTION + COMMAND + SPACE)</appendix>
     <autogen>--KeyToKey--
       KeyCode::SEMICOLON, ModifierFlag::FN,
-      KeyCode::DASHBOARD
+      KeyCode::SPACE, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
     </autogen>
 
     <appendix>Fn + RETURN : HELP (for Windows Insert Key)</appendix>
