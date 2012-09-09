@@ -32,6 +32,24 @@
 
   <item>
 
+    <name>VMware専用(for Windows)</name>
+    <identifier>private.vmware.windows</identifier>
+    <only>VMWARE</only>
+
+    <appendix>Shift-L + Command-L + ], [ : Control [+ Shift] + Tab (アプリ内のタブ切り替え)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::TAB, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+    </autogen>
+
+  </item>
+
+  <item>
+
     <name>Windowsリモートデスクトップ専用</name>
     <identifier>private.mstsc</identifier>
     <only>MSTSC</only>
@@ -90,6 +108,16 @@
     <autogen>--KeyToKey--
       KeyCode::Q, ModifierFlag::COMMAND_R,
       KeyCode::F4, ModifierFlag::OPTION_R
+    </autogen>
+
+    <appendix>Shift-L + Command-L + ], [ : Control [+ Shift] + Tab (アプリ内のタブ切り替え)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::TAB, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
