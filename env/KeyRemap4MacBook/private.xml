@@ -46,6 +46,21 @@
       KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
     </autogen>
 
+    <appendix>Fn + Option + H, L : Control + LEFT, RIGHT (Shift併用時の押しにくさ対策)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::FN | ModifierFlag::OPTION_L,
+      KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::FN | ModifierFlag::OPTION_L,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+    </autogen>
+    <!-- 以下必須 : これを入れないとAltが先に反応してしまう -->
+    <autogen>--KeyToKey--
+      KeyCode::OPTION_L, ModifierFlag::FN,
+      KeyCode::CONTROL_L, ModifierFlag::FN
+    </autogen>
+
   </item>
 
   <item>
