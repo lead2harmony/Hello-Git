@@ -213,19 +213,37 @@
       KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN
     </autogen>
 
-    <appendix>Fn + I : MISSION CONTROL</appendix>
+    <appendix>Fn + M : MISSION CONTROL (OLD Setting)</appendix>
     <autogen>--KeyToKey--
-      KeyCode::I, ModifierFlag::FN,
+      KeyCode::M, ModifierFlag::FN,
       KeyCode::MISSION_CONTROL
     </autogen>
 
-    <appendix>Fn + SHIFT + SEMICOLON : DASHBOARD</appendix>
+    <appendix>Fn + S : MISSION CONTROL ('S'pace, Next to the 'D')</appendix>
     <autogen>--KeyToKey--
-      KeyCode::SEMICOLON, ModifierFlag::FN | ModifierFlag::SHIFT_L,
-      KeyCode::DASHBOARD
+      KeyCode::S, ModifierFlag::FN,
+      KeyCode::MISSION_CONTROL
     </autogen>
 
-    <appendix>Fn + SEMICOLON : SPOTLIGHT (CONTROL + OPTION + COMMAND + SPACE)</appendix>
+    <appendix>Fn + D : DESKTOP (Ctrl + Opt + Cmd + ')</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::D, ModifierFlag::FN,
+      KeyCode::QUOTE, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+    </autogen>
+
+    <appendix>Fn + F : Cmd + Ctrl + F (Full Screen Toggle)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::F, ModifierFlag::FN,
+      KeyCode::F, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn + SHIFT + SEMICOLON : Spotlight Window</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::SEMICOLON, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::SPACE, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+    </autogen>
+
+    <appendix>Fn + SEMICOLON : SPOTLIGHT (Ctrl + Opt + Cmd + Space)</appendix>
     <autogen>--KeyToKey--
       KeyCode::SEMICOLON, ModifierFlag::FN,
       KeyCode::SPACE, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
@@ -235,6 +253,16 @@
     <autogen>--KeyToKey--
       KeyCode::RETURN, ModifierFlag::FN,
       KeyCode::HELP
+    </autogen>
+
+    <appendix>Fn + SHIFT + ] : Cmd + F1 (Windows Change for Same Application)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::F1, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::F1, ModifierFlag::COMMAND_R
     </autogen>
 
   </item>
@@ -265,6 +293,11 @@
     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::FN,
       KeyCode::ESCAPE
+    </autogen>
+    <!-- アプリケーションの強制終了に割り当てられてしまうことの回避策(もっとスマートな方法があったような気がするが、取り敢えずこれで) -->
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
