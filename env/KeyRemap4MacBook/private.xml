@@ -213,6 +213,12 @@
       KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN
     </autogen>
 
+    <appendix>Fn + A : Ctrl + F7 (Toggle Tab Control Targets)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::A, ModifierFlag::FN,
+      KeyCode::F7, ModifierFlag::CONTROL_L
+    </autogen>
+
     <appendix>Fn + M : Ctrl + F2 (Focus Application Menu)</appendix>
     <autogen>--KeyToKey--
       KeyCode::M, ModifierFlag::FN,
