@@ -213,10 +213,10 @@
       KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN
     </autogen>
 
-    <appendix>Fn + M : MISSION CONTROL (OLD Setting)</appendix>
+    <appendix>Fn + M : Ctrl + F2 (Focus Application Menu)</appendix>
     <autogen>--KeyToKey--
       KeyCode::M, ModifierFlag::FN,
-      KeyCode::MISSION_CONTROL
+      KeyCode::F2, ModifierFlag::CONTROL_L
     </autogen>
 
     <appendix>Fn + S : MISSION CONTROL ('S'pace, Next to the 'D')</appendix>
@@ -255,6 +255,16 @@
       KeyCode::HELP
     </autogen>
 
+    <appendix>Fn + COMMAND + SHIFT + ] : Ctrl + F4 (Windows Change for Same Desktop)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::F4, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::F4, ModifierFlag::CONTROL_L
+    </autogen>
+
     <appendix>Fn + SHIFT + ] : Cmd + F1 (Windows Change for Same Application)</appendix>
     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
@@ -263,6 +273,12 @@
     <autogen>--KeyToKey--
       KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
       KeyCode::F1, ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn + SHIFT + \ : Ctrl + F6 (Focus Floating Window)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BACKSLASH, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::F6, ModifierFlag::CONTROL_L
     </autogen>
 
   </item>
@@ -302,6 +318,25 @@
     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
       KeyCode::ESCAPE
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>代用TAB</name>
+    <identifier>private.other_tab</identifier>
+
+    <appendix>Fn + , : Shift + Tab</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::COMMA, ModifierFlag::FN,
+      KeyCode::TAB, ModifierFlag::SHIFT_R
+    </autogen>
+
+    <appendix>Fn + . : Tab</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::DOT, ModifierFlag::FN,
+      KeyCode::TAB
     </autogen>
 
   </item>
