@@ -261,29 +261,29 @@
       KeyCode::HELP
     </autogen>
 
-    <appendix>Fn + COMMAND + SHIFT + ] : Ctrl + F4 (Windows Change for Same Desktop)</appendix>
+    <appendix>Fn + COMMAND + SHIFT + ] : Cmd + F1 (Windows Change for Same Application)</appendix>
     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
-      KeyCode::F4, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
-    </autogen>
-    <autogen>--KeyToKey--
-      KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
-      KeyCode::F4, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <appendix>Fn + SHIFT + ] : Cmd + F1 (Windows Change for Same Application)</appendix>
-    <autogen>--KeyToKey--
-      KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
       KeyCode::F1, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_L
     </autogen>
     <autogen>--KeyToKey--
-      KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
       KeyCode::F1, ModifierFlag::COMMAND_R
     </autogen>
 
-    <appendix>Fn + SHIFT + \ : Ctrl + F6 (Focus Floating Window)</appendix>
+    <appendix>Fn + SHIFT + ] : Ctrl + F4 (Windows Change for Same Desktop)</appendix>
     <autogen>--KeyToKey--
-      KeyCode::BACKSLASH, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::F4, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::FN | ModifierFlag::SHIFT_L,
+      KeyCode::F4, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <appendix>Fn + COMMAND + SHIFT + \ : Ctrl + F6 (Focus Floating Window)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::BACKSLASH, ModifierFlag::FN | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
       KeyCode::F6, ModifierFlag::CONTROL_L
     </autogen>
 
