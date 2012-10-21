@@ -14,21 +14,21 @@
 
   <item>
 
-    <name>囲み補助</name>
+    <name>囲み補助(VMwareでは使い物にならない...もっと別のやり方が必要)</name>
     <identifier>private.other_enclosure_assist</identifier>
 
     <appendix>Fn + Option + Command + (,[,{,',"... : </appendix>
     <autogen>--KeyToKey--
       KeyCode::KEY_8, ModifierFlag::FN | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
       KeyCode::KEY_8, ModifierFlag::SHIFT_L,
-      KeyCode::KEY_8, ModifierFlag::SHIFT_L,
-      KeyCode::CURSOR_LEFT
+      KeyCode::CURSOR_LEFT, ModifierFlag::NONE,
+      KeyCode::KEY_8, ModifierFlag::SHIFT_L
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::KEY_9, ModifierFlag::FN | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
-      KeyCode::KEY_9, ModifierFlag::SHIFT_L,
       KeyCode::KEY_0, ModifierFlag::SHIFT_L,
-      KeyCode::CURSOR_LEFT
+      KeyCode::CURSOR_LEFT, ModifierFlag::NONE,
+      KeyCode::KEY_9, ModifierFlag::SHIFT_L
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::MINUS, ModifierFlag::FN | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
@@ -331,6 +331,12 @@
     <autogen>--KeyToKey--
       KeyCode::F, ModifierFlag::FN,
       KeyCode::F, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_R
+    </autogen>
+
+    <appendix>Fn + I : REMINDER (Ctrl + Opt + Cmd + Minus)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::I, ModifierFlag::FN,
+      KeyCode::MINUS, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
     </autogen>
 
     <appendix>Fn + SHIFT + SEMICOLON : Spotlight Window</appendix>
