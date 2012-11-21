@@ -12,6 +12,11 @@
     <equal>com.microsoft.rdc</equal>
   </appdef>
 
+  <appdef>
+    <appname>EVERNOTE</appname>
+    <equal>com.evernote.Evernote</equal>
+  </appdef>
+
   <item>
 
     <name>囲み補助(VMwareでは使い物にならない...もっと別のやり方が必要)</name>
@@ -223,6 +228,21 @@
     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
       KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+    </autogen>
+
+  </item>
+
+  <item>
+
+    <name>Evernote専用</name>
+    <identifier>private.evernote</identifier>
+    <only>EVERNOTE</only>
+
+    <appendix>Shift-L + Command-L + M : Option + Command + S</appendix>
+    <appendix>(サイドバー表示トグル／標準メールアプリと同等に)</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::M, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+      KeyCode::S, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
     </autogen>
 
   </item>
