@@ -50,10 +50,14 @@ syntax on
 "-- set guifont=Courier:h14
 if has('mac')
     set encoding=utf-8
+"   set guifont=Consolas:h12    " 行高にバラツキがある
     set guifont=Courier:h12     " linespaceを設定すれば14ptじゃなくても見やすくなる
+elseif $VIM_SET_TYPE ==? "WIN7"
+    set encoding=sjis
+    set guifont=Consolas:h10:cANSI
 elseif has('win32')
     set encoding=sjis
-    set guifont=Terminal:h10:cSHIFTJIS
+    set guifont=Terminal:h11:cSHIFTJIS
 else
 "   set guifont=DejaVu\ Sans\ Mono\ 9
     set guifont=Liberation\ Mono\ 9
