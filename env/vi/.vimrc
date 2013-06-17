@@ -174,6 +174,7 @@ endif
     nmap    <C-Space><C-r>          :source %<CR>
     nmap    <C-Space><C-e>          :E<CR>
     nmap    <C-Space><C-s>          :w<CR>
+    nmap    <C-Space><C-u>          :e ++enc=utf-8 ++ff=unix
     nmap    <C-Space><C-l>          :call Toggle_ListMode()<CR>
     nmap    <C-Space><C-w>          :call Toggle_WindowWidth()<CR>
     nmap    <C-Space><C-f>          :call Toggle_FontSize()<CR>
