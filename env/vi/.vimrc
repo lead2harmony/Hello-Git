@@ -54,7 +54,8 @@ if has('mac')
     set guifont=Courier:h12     " linespaceを設定すれば14ptじゃなくても見やすくなる
 elseif $VIM_SET_TYPE ==? "WIN7"
     set encoding=sjis
-    set guifont=Consolas:h10:cANSI
+"   set guifont=Consolas:h10:cANSI
+    set guifont=Consolas:h10:cSHIFTJIS
 elseif has('win32')
     set encoding=sjis
     set guifont=Terminal:h11:cSHIFTJIS
